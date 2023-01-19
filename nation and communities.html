@@ -1,0 +1,475 @@
+<!--
+  Name: Eileen Shu
+  Course: g10 Web Dev
+  Teacher: Mr. Hardman
+  School: Pembinatrails early college
+  Date Last Modified: 1/19/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nation nd Communities</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!--
+      this change the fonts of the website
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /*
+        This styles the section elements on this page to
+        have space that is 10% of the browser window added
+        to the left and right side and 50px of space to the
+        bottom side.
+      */
+      section {
+        margin: 0 10% 50px;
+      }
+
+      /*
+        This styles the h2 in the section elements on this
+        page to have space on the bottom of the element to
+        10px.
+      */
+      section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+      }
+
+      /*
+        This styles the element with an ID of image-without-figure
+        to have a width of 50% of the parent element, which is the
+        section element.
+      */
+      #image-without-figure {
+        width: 50%;
+      }
+
+      nav {
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+      * {
+        line-height: 140%;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      /* 
+        This styles the body of the web page to have a background color of #f5f5ff,
+        I chose blue because it represent trust and it has a good relation with the topic.
+        I've chose the light scheme because I've put a lot of text and information on the website and 
+        my background color is close to white.
+        it is the monochromatic color scheme.
+        used bolded version to show important texts
+
+      */
+      body {
+        font-family: "Lora", serif;
+        font-size: 1.6rem;
+        background-color: #f5f5ff;
+        color: #191970;
+      }
+
+      .nav-link {
+        margin: 4px;
+        border: 2px solid black;
+        padding: 5px;
+
+        background-color: #0d0d44;
+        color: #f5f5ff;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        background-color: #f5f5ff;
+        color: #191970;
+      }
+
+      /*
+        This styles all h1 tags to be center aligned and have a font size of 40 px.
+      */
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        text-decoration: underline;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      /* Beginning of code sourced from https://www.sitepoint.com/css-transforms-real-world/ */
+      .flip-card {
+        position: relative;
+        width: 22vw;
+        height: 20vw;
+        min-width: 130px;
+        min-height: 100px;
+        margin: 0 20px;
+        transform-style: preserve-3d;
+        transition: transform 1s ease-in-out;
+      }
+
+      .flip-card:hover {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card img {
+        object-fit: cover;
+      }
+
+      .side {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      .back {
+        transform: rotateY(180deg);
+        text-align: center;
+        background-color: #e0e0e0;
+      }
+
+      #back-to-top {
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+
+        width: 80px;
+        height: 80px;
+
+        -ms-flex-pack: center;
+        -moz-box-pack: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -ms-flex-align: center;
+        -moz-box-align: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        border: #121212 solid 2px;
+
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+
+        background: -o-radial-gradient(#bdb0f7, #4c6594);
+        background: -moz-radial-gradient(#bdb0f7, #4c6594);
+        background: -webkit-radial-gradient(#bdb0f7, #4c6594);
+        background: radial-gradient(#bdb0f7, #4c6594);
+
+        color: #313131;
+
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The below comment is how a multiline comment should be written. -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li>
+            <a href="background and geograpgic location.html"
+              >Background and Geograpgic Location</a
+            >
+          </li>
+          <li>
+            <a href="nation and communities.html">Nation and Communities</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Treaty 1: nation and communities</h1>
+
+      <a id="scroll-link" href="#content">
+        <svg
+          id="mouse"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 76 130"
+          preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd">
+            <rect
+              width="70"
+              height="118"
+              x="1.5"
+              y="1.5"
+              stroke="#FFF"
+              stroke-width="3"
+              rx="36" />
+            <circle id="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+          </g>
+        </svg>
+      </a>
+    </header>
+    <main id="content">
+      <!-- 
+        \ create sections for areas of related content.
+      -->
+      <section>
+        <!-- 
+          Inside semantic tags, use divs to further group content
+        -->
+        <div>
+          <h2>Brokenhead (Ojibway)</h2>
+          <p>
+            "<span id="definition">Brokenhead (Ojibway) </span>
+            is an Anishinaabe First Nation located approximately 64 kilometres
+            northeast of Winnipeg, Manitoba. The main reserve of Brokenhead 4 is
+            surrounded by the Rural Municipality of St. Clements, except for a
+            small lakeshore on Lake Winnipeg
+            <a
+              href="https://en.wikipedia.org/wiki/Brokenhead_Ojibway_Nation"
+              target="_blank">
+              - wikipedia
+            </a>
+          </p>
+        </div>
+        <p>The image below is the symbol of The Brokenhead (ojibway)</p>
+        <figure class="flip-card">
+          <img
+            src="image/Brokenhead.png"
+            alt="An image of symbol of The Brokenhead."
+            class="front side"
+            width="500px"
+            height="500px" />
+          <figcaption class="back side">
+            The graceful bird of the skies, the eagle, is the prayer carrier and
+            messenger of the Anishinabe people. As the eagle soars across the
+            skies, one knows he is carrying the prayers to the Creator.
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags,  use divs to further group content
+        -->
+        <div>
+          <!--
+            heading content
+          -->
+          <h2>Fort Alexander / Sagkeeng (Anicinabe)</h2>
+          <!--
+            text content
+          -->
+          <p>
+            <span id="definition"> Fort Alexander / Sagkeeng (Anicinabe) </span>
+            is comprised of Anicinabe people who have resided at or near the
+            Fort Alexander Indian Reserve #3 located along the Winnipeg River
+            and Traverse Bay, since time immemorial. The ancestors of the
+            Anicinabe people of Sagkeeng signed Treaty 1 in 1871. The Fort
+            Alexander Indian Reserve of approximately 21,674 acres was surveyed
+            in 1874 and has a current band membership of 7,637 people with
+            approximately 3,352 living on reserve.
+            <a href="https://treaty1.ca/sagkeeng-first-nation/" target="_blank">
+              - Treaty 1
+            </a>
+          </p>
+        </div>
+        <!--
+          image content
+        -->
+        <p>
+          The image below is the symbol of The Fort Alexander / Sagkeeng
+          (Anicinabe)
+        </p>
+        <figure class="flip-card">
+          <img
+            src="image/Sagkeeng.png"
+            alt="An image of symbol of The Sagkeeng."
+            class="front side"
+            width="480px"
+            height="450px" />
+          <figcaption class="back side">mouth of the river</figcaption>
+        </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags, use divs to further group content
+        -->
+        <div>
+          <h2>Long Plain (Ojibway and Dakota)</h2>
+          <p>
+            "<span id="definition">Long Plain (Ojibway and Dakota) </span
+            >(Ojibwe: Gaa-ginooshkodeyaag) is an Ojibway and Dakota First
+            Nations band government whose reserve is located in the Central
+            Plains Region of Manitoba, Canada. Its reserve lands include the
+            Long Plain Reserve #6, the Keeshkeemaquah Reserve near Portage La
+            Prairie, and the Madison Indian Reserve #1—the first urban reserve
+            in Winnipeg.
+            <a
+              href="https://en.wikipedia.org/wiki/Long_Plain_First_Nation"
+              target="_blank">
+              - wikipedia
+            </a>
+          </p>
+        </div>
+        <p>
+          The image below is the symbol of The Long Plain (Ojibway and Dakota)
+        </p>
+        <figure class="flip-card">
+          <img
+            src="image/Long Plain.png"
+            alt="An image of symbol of The Long Plain."
+            class="front side"
+            width="500px"
+            height="420px" />
+          <figcaption class="back side">
+            “Saulteaux”, meaning from the “Sault”
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags, use divs to further group content
+        -->
+        <div>
+          <h2>Peguis Roseau (Ojibway and Cree)</h2>
+          <p>
+            "<span id="definition">Peguis Roseau (Ojibway and Cree) </span
+            >(formerly St. Peter's Band, Ojibwe: Oshki-ishkonigan meaning new
+            reserve) is the largest First Nations community in Manitoba, Canada,
+            with a population of approximately 10,300 people (3,521 on reserve
+            and 6,504 off reserve). The members of Peguis are of Saulteaux
+            (Ojibway) and Cree descent.
+            <a
+              href="https://en.wikipedia.org/wiki/Peguis_First_Nation"
+              target="_blank">
+              - wikipedia
+            </a>
+          </p>
+        </div>
+        <p>
+          The image below is the symbol of The Peguis Roseau (Ojibway and Cree)
+        </p>
+        <figure class="flip-card">
+          <img
+            src="image/Peguis.png"
+            alt="An image of symbol of The Peguis Roseau."
+            class="front side"
+            width="500px"
+            height="420px" />
+          <figcaption class="back side">
+            Yellow stands for as long as the sun shines. the red circle
+            represents the circle of life and the red people (aboriginal) the
+            lines separating the colors represents the two nations that signed
+            the treaties and that neither would try to dominate the other
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags, use divs to further group content
+        -->
+        <div>
+          <h2>River Sandy Bay (Ojibway)</h2>
+          <p>
+            "<span id="definition">River Sandy Bay (Ojibway) </span>(Ojibwe:
+            Gaa-wiikwedaawangaag) is an Ojibway/Dakota/mixed-blood First Nation
+            in Manitoba, Canada. As of the 2016 Canadian Census, it had a
+            population of 2,515; while the First Nation's website reported a
+            membership of 6,776 individuals as of April 2018. It is located on
+            the western shore of Lake Manitoba. Adjacent rural municipalities
+            are Alonsa and Gladstone Lakeview. The main reserve of Sandy Bay
+            (Indian Reserve No. 5)—or Marius, Manitoba—is located at 50°33′00″N
+            98°38′50″W.
+            <a
+              href="https://en.wikipedia.org/wiki/Sandy_Bay_First_Nation"
+              target="_blank">
+              - wikipedia
+            </a>
+          </p>
+        </div>
+        <p>The image below is the symbol of The River Sandy Bay (Ojibway)</p>
+        <figure class="flip-card">
+          <img
+            src="image/River Sandy Bay.png"
+            alt="An image of symbol of The River Sandy Bay."
+            class="front side"
+            width="550px"
+            height="400px" />
+          <figcaption class="back side">A view of Sandy Bay</figcaption>
+        </figure>
+      </section>
+      <section>
+        <!-- 
+          Inside semantic tags, use divs to further group content
+        -->
+        <div>
+          <h2>Swan Lake (Cree)</h2>
+          <p>
+            "<span id="definition">Swan Lake (Cree) </span> (Ojibwe:
+            Gaa-biskigamaag, meaning The lake that is curved) is a Saulteaux
+            band government located along Swan Lake in the Pembina Valley Region
+            of Manitoba, Canada. Its main reserve is Swan Lake 7, which is
+            surrounded by the Municipality of Lorne; the First Nation also has
+            economic initiatives located at their reserve nearby the Rural
+            Municipality of Headingley (IR 8A).
+            <a
+              href="https://en.wikipedia.org/wiki/Swan_Lake_First_Nation"
+              target="_blank">
+              - wikipedia
+            </a>
+          </p>
+        </div>
+        <p>The image below is the symbol of The Swan Lake (Cree)</p>
+        <figure class="flip-card">
+          <img
+            src="image/Swan Lake.png"
+            alt="An image of symbol of The Swan Lake."
+            class="front side"
+            width="500px"
+            height="480px" />
+          <figcaption class="back side">The lake that is curved</figcaption>
+        </figure>
+      </section>
+      <section>
+        <a href="#top" id="back-to-top">
+          Back <br />
+          to Top
+        </a>
+      </section>
+    </main>
+    <footer>
+      <!-- 
+        put content inside a container.
+        text decoration tags. 
+      -->
+      <p>
+        <small>&#169; Eileen</small>
+      </p>
+    </footer>
+  </body>
+</html>

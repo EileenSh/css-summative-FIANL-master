@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  line-height: 140%;
+}
+html {
+  font-size: 62.5%;
+}
+/* 
+  This styles the body of the web page to have a background color of #f5f5ff,
+  I chose blue because it represent trust and it has a good relation with the topic.
+  I've chose the light scheme because I've put a lot of text and information on the website and 
+  my background color is close to white.
+  it is the monochromatic color scheme.
+  used bolded version to show important texts
+
+*/
+body {
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  background-color: #f5f5ff;
+  color: #191970;
+}
+
+header {
+  position: relative;
+
+  display: inline-block;
+
+  width: 100%;
+
+  /*
+    This is how we apply linear gradients to a polygonal area.
+
+    The first parameter is the direction of the linear gradient (can be
+    to top, to bottom, to left, to right, to top left, to bottom right, etc.
+    or can be a specific degree amount, example: 60deg).
+
+    The next X parameters are the colours to show in the gradient.
+  */
+  background: -o-linear-gradient(60deg, #7f7fd5, #86a8e7, #91eae4);
+  background: -moz-linear-gradient(60deg, #7f7fd5, #86a8e7, #91eae4);
+  background: -webkit-linear-gradient(60deg, #7f7fd5, #86a8e7, #91eae4);
+  background: linear-gradient(60deg, #7f7fd5, #86a8e7, #91eae4);
+}
+
+header h1 {
+  margin-bottom: 10rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.nav-link {
+  margin: 4px;
+  border: 2px solid black;
+  padding: 5px;
+
+  background-color: #0d0d44;
+  color: #f5f5ff;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f5f5ff;
+  color: #191970;
+}
+
+/* Code sourced from https://codepen.io/matchboxhero/pen/gGdJYo */
+#mouse {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto;
+}
+
+#scroll {
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform, opacity;
+  opacity: 1;
+}
+
+#scroll-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes scroll {
+  0%,
+  20% {
+    transform: translateY(0) scaleY(1);
+  }
+  100% {
+    transform: translateY(36px) scaleY(2);
+    opacity: 0;
+  }
+}
+
+/*
+  This styles all h1 tags to be center aligned and have a font size of 40 px.
+*/
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
